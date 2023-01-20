@@ -1,1 +1,137 @@
-/* No CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns .btn {
+  padding: 3px;
+  font-size: 19px;
+  font-weight: 100;
+  font-family: arial;
+  border-radius: 5px;
+}
+
+.btns .sucess {
+  border: 1.5px solid #0076ff;
+  color: #0076ff;
+}
+
+.btns .escape {
+  border: #e7195a solid 1.5px;
+  color: #e7195a;
+}
+
+.container {
+  width: 780px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+header {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container .logo {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1aac83;
+}
+
+header .container nav {
+  min-width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container nav a {
+  text-decoration: none;
+  font-size: 19px;
+  color: #0076ff;
+  font-weight: 100;
+  font-family: arial;
+  text-transform: capitalize;
+}
+
+main h1 {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: arial;
+  color: #1aac83;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+main form {
+  min-width: 350px;
+  border: #4ef9d6ff solid 2px;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+main form input {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: arial;
+  border: #4ef9d6ff 1.5px solid;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+main form label {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: arial;
+  color: #333;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 99%;
+  }
+  header {
+    width: 100vw;
+  }
+  main {
+    width: 100vw;
+  }
+  main form {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    max-width: 80%;
+  }
+  header {
+    width: 100vw;
+  }
+  main {
+    width: 100vw;
+  }
+}
